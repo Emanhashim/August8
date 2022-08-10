@@ -1,0 +1,1936 @@
+{
+	"info": {
+		"_postman_id": "d04cc38f-a91d-47bd-bf6e-77cd7808441c",
+		"name": "Agent & Master",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16650656"
+	},
+	"item": [
+		{
+			"name": "User Signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"birthDay\": \"12/12/2020\",\r\n  \"confirmPassword\": \"Sara1234\",\r\n  \"country\": \"ethiopia\",\r\n  \"email\": \"eeeee@gmail.com\",\r\n  \"firstName\": \"emanti\",\r\n  \"gender\": \"FEMALE\",\r\n  \"lastName\": \"emanti\",\r\n  \"password\": \"Sara1234\",\r\n  \"username\": \"22222222222\"\r\n}"
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/Api/SignUp/User",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"SignUp",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AgentSignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"emanti\",\r\n  \"lastName\": \"emanti\",\r\n  \"companyName\": \"emanti\",\r\n  \"username\": \"66666666666\",\r\n  \"licenceNumber\": \"091142674393\",\r\n  \"businessLNum\": \"091142674393\",\r\n  \"confirmPassword\": \"Sara1234\",\r\n  \"password\": \"Sara1234\",\r\n  \"role\":\"AGENT\"\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Api/SignUp/Agent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"SignUp",
+						"Agent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MerchantSignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"emanti\",\r\n  \"lastName\": \"emanti\",\r\n  \"companyName\": \"emanti\",\r\n  \"username\": \"0911442543424\",\r\n  \"licenceNumber\": \"091142674393\",\r\n  \"businessLNum\": \"091142674393\",\r\n  \"confirmPassword\": \"Sara1234\",\r\n  \"password\": \"Sara1234\",\r\n  \"role\":\"MERCHANT\"\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/api/signup/merchant",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"signup",
+						"merchant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"091122334455\",\r\n    \"password\":\"Sara1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Api/SignUp/Admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"SignUp",
+						"Admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Merchantsignin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"0911442543424\",\r\n    \"password\":\"Sara1234\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/api/signin/merchant",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"signin",
+						"merchant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AgentSignin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"2345254245\",\r\n    \"password\":\"Sara1234\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/signin/agent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"signin",
+						"agent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserSignin",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"22222222222\",\r\n    \"password\":\"Sara1234\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/Api/SignIn/User",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"SignIn",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"091122334455\",\r\n    \"password\":\"Sara1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Api/SignIn/Admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"SignIn",
+						"Admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"string\",\r\n  \"lastName\": \"string\",\r\n  \"newPassword\": \"string\",\r\n  \"password\": \"string\",\r\n  \"resetPasswordToken\": \"string\",\r\n  \"username\": \"string\"\r\n}"
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/Api/Users/Update",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Users",
+						"Update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjIyMjIyMjIyMjIyIiwiaWF0IjoxNjU4Nzc2ODk1LCJleHAiOjE2NTg4MTI4OTV9.WwN2uUWcuuPlTGbf1n37iw66Sjlet2wuMsOeFE9U5fg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyMjIyMiIsImV4cCI6MTY1MTk1NzEzNiwiaWF0IjoxNjUxOTIxMTM2fQ.9zekByv31LlA9M4DZzm8hjeg_51WmQ7JpuTJVcB8ZG4Yk",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"toAccountNumber\":\"22222222222\",\r\n    \"amount\":34,\r\n    \"message\":\"from sara\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/SendMoney",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"SendMoney"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WithDraw",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjA5MjI0MjAxNTQiLCJpYXQiOjE2NTc4NjYyNjYsImV4cCI6MTY1NzkwMjI2Nn0.X0wJcVeELQ4jQacVgktzvqT-QNL16z6dvzo_KPkozZc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n   \"amount\": 12,\r\n  \"fromAccountNumber\": \"0960148453\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/api/accounts/withdraw",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"withdraw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBR0VOVF0iLCJzdWIiOiIwOTEzNjQ1OTY2IiwiaWF0IjoxNjU3ODY2NzM5LCJleHAiOjE2NTc5MDI3Mzl9.W8-Rw9e0pevKxp0Pwrba4csekJhLdiP0YnAoSt26t9c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amount\": 15,\r\n  \"toAccountNumber\": \"0990909090\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/api/accounts/deposit",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transactions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjA5MjI0MjAxNTQiLCJpYXQiOjE2NTc4NjYyNjYsImV4cCI6MTY1NzkwMjI2Nn0.X0wJcVeELQ4jQacVgktzvqT-QNL16z6dvzo_KPkozZc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/api/accounts/transaction",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Accounts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg3NzMwMDMsImV4cCI6MTY1ODgwOTAwM30.EiupnBgZAEphqb3LsPYXXlyRinOXdSSFnSaO9fHA8qc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/All",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"All"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAccount",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjA5MTE0NDI1NDM0MjQiLCJpYXQiOjE2NTUyMjgzMDIsImV4cCI6MTY1NTI2NDMwMn0.T2kIY1YwtYDZtpKxkMT3NyVXd5cEWryBC3VIKwZUTe0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": \"2345254245\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/api/accounts/getaccount",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"getaccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Setting",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6Ijc3Nzc3Nzc3Nzc3IiwiaWF0IjoxNjU2MTQxMzAxLCJleHAiOjE2NTYxNzczMDF9.HXNHgAhrz4KlDfS3JGRYLt3oFTjfJivCDp54W9NYnNM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"settingName\":\"Agent Deposit Limit\",\r\n    \"value\":30000,\r\n    \"levels\": \"LEVEL_1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/settings/createsetting",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"settings",
+						"createsetting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Setting",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjMzMzMzMzMzMzMzMyIsImlhdCI6MTY1NjAwNTEyNywiZXhwIjoxNjU2MDQxMTI3fQ.0WmhZVlcZmHXJlbye0UIgR0qRkHig66dri4VhBVB3hU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"settingName\":\"commission fee(LEVEL_1)\",\r\n    \"value\":5,\r\n    \"level\":\"LEVEL_1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/settings/setsetting",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"settings",
+						"setsetting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Balance Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwOTExMjQyNjc0MzkzIiwiZXhwIjoxNjUzNjg1OTM3LCJpYXQiOjE2NTM2NDk5Mzd9.oFfnrTewvsz6NJ5gdI-zmbxVI2kBhjwQmRUjQhJYTaM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"accountNumber\": \"0922420131\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/api/accounts/balance",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Commission Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBR0VOVF0iLCJzdWIiOiIyMzQ1MjU0MjQ1IiwiaWF0IjoxNjU4NTAxOTYwLCJleHAiOjE2NTg1Mzc5NjB9.8y8z1AyFbSlQGVft8GwKDpWOoEq0-pjZTHGE4uGSARw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/accounts/commission",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"commission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total Agents",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjA5MTE0NDIzNDMyMjMyIiwiaWF0IjoxNjU2MzQ5NDUzLCJleHAiOjE2NTYzODU0NTN9.wRK1no6WesxGnTZrCyiGj4EyVYCkCbPEuJ_HomRlLE8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://198.199.67.201:8080/settings/totagents",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"settings",
+						"totagents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total Merchants",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjA5MTE0NDIzNDMyMjMyIiwiaWF0IjoxNjU2MzQ5NDUzLCJleHAiOjE2NTYzODU0NTN9.wRK1no6WesxGnTZrCyiGj4EyVYCkCbPEuJ_HomRlLE8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://198.199.67.201:8080/settings/totmerchants",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"settings",
+						"totmerchants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total Customers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjA5MTE0NDIzNDMyMjMyIiwiaWF0IjoxNjU2MzQ5NDUzLCJleHAiOjE2NTYzODU0NTN9.wRK1no6WesxGnTZrCyiGj4EyVYCkCbPEuJ_HomRlLE8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://198.199.67.201:8080/settings/totcustomers",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"settings",
+						"totcustomers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total Transaction Fee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjA5MTE0NDIzNDMyMjMyIiwiaWF0IjoxNjU2MzU0NDU3LCJleHAiOjE2NTYzOTA0NTd9.oABwU4XzykwQxtm4svLn-2FsT3hX8gXwiiFgu0kpjL4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://198.199.67.201:8080/api/accounts/totaltransfee",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"totaltransfee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total Commission",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg3MjgxMDksImV4cCI6MTY1ODc2NDEwOX0.UpPLcw_ITNHEVmX6QmPn6P2gN9aqrmvt_WNc-uvc7lk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/TotalCommission",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"TotalCommission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total Revenue",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg3MjgxMDksImV4cCI6MTY1ODc2NDEwOX0.UpPLcw_ITNHEVmX6QmPn6P2gN9aqrmvt_WNc-uvc7lk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/Revenue",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"Revenue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Transactions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjMzMzMzMzMzMzMzMyIsImlhdCI6MTY1NjUzMDEwMCwiZXhwIjoxNjU2NTY2MTAwfQ.ZWP2sxNtHRwbFz7tErrSBWti2Y1djbdgawWaXEkCWGs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://198.199.67.201:8080/Api/Accounts/AllTransactions",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"AllTransactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level Upgrade",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjIyMjIyMjIyMjIyIiwiaWF0IjoxNjU5NTUyODg4LCJleHAiOjE2NTk1ODg4ODh9.0FDYiQ8hCNUobiI9mxUYES9JV7EGsnUQAztVY9P-SrQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fileImage",
+							"type": "file",
+							"src": "Un2ktjhM5/20200704_150209.jpg"
+						},
+						{
+							"key": "fileID",
+							"type": "file",
+							"src": "wvZ9ixcNh/20200704_150209.jpg"
+						},
+						{
+							"key": "request",
+							"value": "{  \"birthDay\": \"12/12/2020\",  \"idNumber\":\"1242342342\",  \"email\": \"bazra@gmail.com\",  \"firstName\": \"emanti\",  \"gender\": \"FEMALE\",  \"lastName\": \"emanti\",  \"idType\":\"KEBELE\",  \"woreda\":\"11\",  \"region\":\"Yeka\",  \"city\":\"x\",  \"houseNo\":\"3333\",   \"subCity\":\"x\",  \"motherName\":\"mmmmm\"}",
+							"contentType": "application/json",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "birthDay",
+							"value": "12/12/2020",
+							"type": "text"
+						},
+						{
+							"key": "idNumber",
+							"value": "1242342342",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "bazra@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "emanti",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "FEMALE",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "emanti",
+							"type": "text"
+						},
+						{
+							"key": "idType",
+							"value": "KEBELE",
+							"type": "text"
+						},
+						{
+							"key": "woreda",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "Yeka",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "x",
+							"type": "text"
+						},
+						{
+							"key": "houseNo",
+							"value": "3434234",
+							"type": "text"
+						},
+						{
+							"key": "subCity",
+							"value": "x",
+							"type": "text"
+						},
+						{
+							"key": "motherName",
+							"value": "x",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/Api/Users/UpdateLevel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Users",
+						"UpdateLevel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Master signup 1st",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\":\"112233445566\",\r\n    \"username\":\"112233445566\",\r\n    \"email\":\"e@gmail.com\",\r\n    \"region\":\"addis\",\r\n    \"city\":\"addis\",\r\n    \"organizationType\":\"d\",\r\n    \"password\":\"Sara1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/api/signup/master",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"signup",
+						"master"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Master signup 2nd",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltdIiwic3ViIjoiMTEyMjMzNDQ1NTY2IiwiaWF0IjoxNjU3Mzc4MDI1LCJleHAiOjE2NTc0MTQwMjV9.C6QZlCBinQIFCO2-WjjWAwbtBD-yrgYk0TRT364HSBk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "utf-8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "TIN",
+							"type": "file",
+							"src": "srrbA0N-z/AFASDFAF.txt"
+						},
+						{
+							"key": "Tread",
+							"type": "file",
+							"src": "sKAH5dyZQ/AFASDFAF.txt"
+						},
+						{
+							"key": "request",
+							"value": "",
+							"contentType": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/api/signup/master2",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"signup",
+						"master2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Master signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"112233445566\",\r\n    \"password\":\"Sara1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://198.199.67.201:8080/api/signin/master",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"signin",
+						"master"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account by accountnumber",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IisyNTE5MTEyMjMzNDQ1NSIsImlhdCI6MTY1ODUxMDE5NywiZXhwIjoxNjU4NTQ2MTk3fQ.PNzVtA-tDkt_bcV1r7OpMmRk-EqwuM4muS_pME1Q0D8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\":\"66666666666\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/accounts/getaccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"getaccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Block Account by userID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg3NzY0NTcsImV4cCI6MTY1ODgxMjQ1N30.56v5THiY9HhwO5zDAw4RiYG-5N1sBEh_qrQM0w-jk0A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/Block/40",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"Block",
+						"40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account by User ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg1NzkwMzUsImV4cCI6MTY1ODYxNTAzNX0.ZIrWBcyd5lYkCYgIqt7oXR3hkY7xR03M4YG4TkGKEEc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/accounts/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get transaction by user ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg3NzMwMDMsImV4cCI6MTY1ODgwOTAwM30.EiupnBgZAEphqb3LsPYXXlyRinOXdSSFnSaO9fHA8qc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/AllTransactions/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"AllTransactions",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjIyMjIyMjIyMjIyIiwiaWF0IjoxNjU5NDY5MDY1LCJleHAiOjE2NTk1MDUwNjV9.Cx7gu5kUJpiQlps3TLn2hVKENrdwewr8TY5w-x_pziI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/User/44",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"User",
+						"44"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Agent By Agent ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg4NTIwMzIsImV4cCI6MTY1ODg4ODAzMn0.0kaJwM-cagdeZSjgQQYginmn4Nckg02-stnqL6Zxh3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://198.199.67.201:8080/Api/Accounts/Agent/40",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"Agent",
+						"40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Merchant by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg4NTIwMzIsImV4cCI6MTY1ODg4ODAzMn0.0kaJwM-cagdeZSjgQQYginmn4Nckg02-stnqL6Zxh3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://198.199.67.201:8080/Api/Accounts/Agent/40",
+					"protocol": "http",
+					"host": [
+						"198",
+						"199",
+						"67",
+						"201"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"Agent",
+						"40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg3NzgyOTIsImV4cCI6MTY1ODgxNDI5Mn0.FxzeVZgbNbUE8gjLnA4ZIEZm0VpHsZuCkU51rMlq5tc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/User/26",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"User",
+						"26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Agent by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg3NzgyOTIsImV4cCI6MTY1ODgxNDI5Mn0.FxzeVZgbNbUE8gjLnA4ZIEZm0VpHsZuCkU51rMlq5tc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/Agent/38",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"Agent",
+						"38"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Merchant by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg4NTIwMzIsImV4cCI6MTY1ODg4ODAzMn0.0kaJwM-cagdeZSjgQQYginmn4Nckg02-stnqL6Zxh3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/Agent/38",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"Agent",
+						"38"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of all users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg3NzU3MjgsImV4cCI6MTY1ODgxMTcyOH0.QY16Xfve0BpmhsLEU_dNXBJFBJCsj1edOp5SYJImeoc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/User",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of all Agents",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg4NTIwMzIsImV4cCI6MTY1ODg4ODAzMn0.0kaJwM-cagdeZSjgQQYginmn4Nckg02-stnqL6Zxh3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/Agents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"Agents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Of All Merchants",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg3NzgyOTIsImV4cCI6MTY1ODgxNDI5Mn0.FxzeVZgbNbUE8gjLnA4ZIEZm0VpHsZuCkU51rMlq5tc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/Merchants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"Merchants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg4NTIwMzIsImV4cCI6MTY1ODg4ODAzMn0.0kaJwM-cagdeZSjgQQYginmn4Nckg02-stnqL6Zxh3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"birthDay\": \"12/12/2020\",\r\n  \"password\":\"Sara12345\",\r\n  \"email\": \"bazra@gmail.com\",\r\n  \"firstName\": \"emanti\",\r\n  \"gender\": \"FEMALE\",\r\n  \"lastName\": \"emanti\",\r\n  \"roles\":\"USER\",\r\n  \"woreda\":\"11\",\r\n  \"city\":\"x\",\r\n  \"levels\":\"LEVEL_1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/User/42",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"User",
+						"42"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Agent by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg4NTIwMzIsImV4cCI6MTY1ODg4ODAzMn0.0kaJwM-cagdeZSjgQQYginmn4Nckg02-stnqL6Zxh3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"password\":\"Sara12345\",\r\n  \"email\": \"bazra@gmail.com\",\r\n  \"firstName\": \"emanti\",\r\n  \"lastName\": \"FEMALE\",\r\n  \"companyName\": \"emanti\",\r\n  \"roles\":\"USER\",\r\n  \"licenceNumber\":\"11\",\r\n  \"businessLNum\":\"x\",\r\n  \"woreda\":\"x\",\r\n  \"region\":\"y\",\r\n  \"city\":\"u\",\r\n  \"subcity\":\"ter\",\r\n  \"companytype\":\"o\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/Agent/40",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"Agent",
+						"40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Merchant by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg4NTIwMzIsImV4cCI6MTY1ODg4ODAzMn0.0kaJwM-cagdeZSjgQQYginmn4Nckg02-stnqL6Zxh3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/Merchant/42",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"Merchant",
+						"42"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin transfer money",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NTg4NTk3MzIsImV4cCI6MTY1ODg5NTczMn0.DLIbCTX3FVG5xfTMGtRRc7ImAL6X_jD-QXuz3EjNxuc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromAccountNumber\":\"1111111111\",\r\n    \"toAccountNumber\":\"22222222222\",\r\n    \"amount\":34,\r\n    \"message\":\"from sara\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/AdminSendMoney",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"AdminSendMoney"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update UserInfo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjIyMjIyMjIyMjIyIiwiaWF0IjoxNjU5NDY5MDY1LCJleHAiOjE2NTk1MDUwNjV9.Cx7gu5kUJpiQlps3TLn2hVKENrdwewr8TY5w-x_pziI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"birthDay\": \"12/12/2020\",\r\n  \"idNumber\":\"1242342342\",\r\n  \"email\": \"bazra@gmail.com\",\r\n  \"firstName\": \"emanti\",\r\n  \"gender\": \"FEMALE\",\r\n  \"lastName\": \"emanti\",\r\n  \"idType\":\"KEBELE\",\r\n  \"woreda\":\"11\",\r\n  \"region\":\"Yeka\",\r\n  \"city\":\"x\",\r\n  \"houseNo\":\"3333\",\r\n   \"subCity\":\"x\",\r\n  \"motherName\":\"mmmmm\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Api/Users/UpdateInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Users",
+						"UpdateInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltVU0VSXSIsInN1YiI6IjIyMjIyMjIyMjIyIiwiaWF0IjoxNjU5NDY5MDY1LCJleHAiOjE2NTk1MDUwNjV9.Cx7gu5kUJpiQlps3TLn2hVKENrdwewr8TY5w-x_pziI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Api/Accounts/UserInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Accounts",
+						"UserInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Promotion",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var moment = require('moment');\r",
+							"pm.globals.set(\"CurrentDatetime\",moment().format((\"YYYY-MM-DD\")))"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IltBRE1JTl0iLCJzdWIiOiIwOTExMjIzMzQ0NTUiLCJpYXQiOjE2NjAxMTUzMTcsImV4cCI6MTY2MDE1MTMxN30.2SNt3rbdbqTXeJRd0-XsSgU7E1fcAN04Ys1_TfeWrSw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "rtytytryt",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "jlkkjlhjklhk",
+							"type": "text"
+						},
+						{
+							"key": "picture",
+							"type": "file",
+							"src": "6VR1vsrT_/ai.PNG"
+						},
+						{
+							"key": "expirationDate",
+							"value": "2022-09-10",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "TRUE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/Api/Promotion/CreatePromotion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Api",
+						"Promotion",
+						"CreatePromotion"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
